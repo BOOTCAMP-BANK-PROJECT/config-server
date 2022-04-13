@@ -1,0 +1,20 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/BOOTCAMP-BANK-PROJECT/config-server-properties.git
+          searchPaths: config-data
+          username: ${GIT_USERNAME}
+          password: ${GIT_PASSWORD}
+          default-label: main
+          tryMasterBranch: true
+  security:
+    user:
+      name: root
+      password: root
