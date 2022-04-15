@@ -1,0 +1,7 @@
+version: "3.8"
+
+services:
+  app:
+    environment:
+      GIT_USERNAME: "my_github_username"
+      GIT_PASSWORD: "my_github_token_or_password"

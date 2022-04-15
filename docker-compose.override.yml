@@ -1,0 +1,7 @@
+version: "3.8"
+
+services:
+  app:
+    environment:
+      GIT_USERNAME: "samuel14luis"
+      GIT_PASSWORD: "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"
