@@ -148,16 +148,34 @@ _Below is an example of how you can instruct your audience on installing and set
 ## Usage
 
 First of all, you need to add the next environment variables to your Operating System:
+
 ```
-GIT_USERNAME=github_username
-GIT_PASSWORD=github_token_or_password
+GIT_USERNAME: "my_github_username"
+GIT_PASSWORD: "my_github_token_or_password"
+GIT_URI: "my_github_config_repo_url"
+GIT_CONFIG_SEARCH_PATHS: "my_github_config_repo_base_path"
+SECURITY_USERNAME: "app_security_username"
+SECURITY_PASSWORD: "app_security_password"
 ```
 
 <br />
-To run the service run the following command.
-   ```sh
+To run the service with Java run the following command.
+
+```
    java -jar config-server-0.0.1-SNAPSHOT.jar
-   ```
+```
+<br />
+
+To use it with docker-compose you must duplicate the ```docker-compose.override.example.yml``` file and rename it as ```docker-compose.override.yml```,
+then modify the yml file according to your requirements.
+
+
+<br />
+To run the service with docker-compose run the following command.
+
+```
+docker-compose up -d
+```
 
 <br />
 To test if the service is working correctly, test by sending the following HTTP Request:
