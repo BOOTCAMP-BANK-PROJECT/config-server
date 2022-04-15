@@ -147,7 +147,7 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-To build a docker image of the jar in a thin docker image run the following command.
+To build a docker image of the jar in a docker image run the following command.
 
 ```
    docker build -t my_spring-config-server:0.0.1-SNAPSHOT .
