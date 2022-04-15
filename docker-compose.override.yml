@@ -1,7 +1,0 @@
-version: "3.8"
-
-services:
-  app:
-    environment:
-      GIT_USERNAME: "abc"
-      GIT_PASSWORD: "abc"
