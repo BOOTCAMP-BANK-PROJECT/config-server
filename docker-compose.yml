@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   app:
-    image: samuel14luis/spring-config-server:0.0.3-SNAPSHOT
+    image: samuel14luis/spring-config-server:1.0.0
     ports:
       - "8081:8081"
     restart: always

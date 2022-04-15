@@ -8,13 +8,13 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/BOOTCAMP-BANK-PROJECT/config-server-properties.git
-          searchPaths: config-data
+          uri: ${GIT_URI}
+          searchPaths: ${GIT_CONFIG_SEARCH_PATHS}
           username: ${GIT_USERNAME}
           password: ${GIT_PASSWORD}
           default-label: main
           tryMasterBranch: true
   security:
     user:
-      name: root
-      password: root
+      name: ${SECURITY_USERNAME}
+      password: ${SECURITY_PASSWORD}

@@ -5,3 +5,7 @@ services:
     environment:
       GIT_USERNAME: "my_github_username"
       GIT_PASSWORD: "my_github_token_or_password"
+      GIT_URI: "my_github_config_repo_url"
+      GIT_CONFIG_SEARCH_PATHS: "my_github_config_repo_base_path"
+      SECURITY_USERNAME: "app_security_username"
+      SECURITY_PASSWORD: "app_security_password"
