@@ -135,9 +135,9 @@ _Below is an example of how you can instruct your audience on installing and set
    This will generate the next files:<br />
 
     ```
-   ./target/config-server-0.0.1-SNAPSHOT-jar-with-dependencies.jar
-   ./target/config-server-0.0.1-SNAPSHOT.jar
-   ./target/config-server-0.0.1-SNAPSHOT.jar.original
+   ./target/app-jar-with-dependencies.jar
+   ./target/app.jar
+   ./target/app.jar.original
     ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -150,7 +150,7 @@ _Below is an example of how you can instruct your audience on installing and set
 To build a docker image of the jar in a docker image run the following command.
 
 ```
-   docker build -t my_spring-config-server:0.0.1-SNAPSHOT .
+   docker build -t my_user/spring-config-server:0.0.1-SNAPSHOT .
 ```
 <br />
 

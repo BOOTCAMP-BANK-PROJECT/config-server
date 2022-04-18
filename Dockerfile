@@ -30,8 +30,8 @@ RUN cat /etc/timezone
 
 WORKDIR /usr/src
 
-COPY --from=builder ["/usr/src/target/config-server-0.0.1-SNAPSHOT.jar", "/usr/src/"]
+COPY --from=builder ["/usr/src/target/app.jar", "/usr/src/"]
 
 EXPOSE 8081
 
-CMD ["java","-jar", "/usr/src/config-server-0.0.1-SNAPSHOT.jar"]
+CMD ["java","-jar", "/usr/src/app.jar"]
