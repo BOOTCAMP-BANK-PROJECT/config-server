@@ -169,7 +169,7 @@ SECURITY_PASSWORD: "app_security_password"
 To run the service with Java run the following command.
 
 ```
-   java -jar config-server-0.0.1-SNAPSHOT.jar
+   java -jar ./target/app.jar
 ```
 <br />
 
