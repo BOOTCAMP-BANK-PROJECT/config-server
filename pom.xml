@@ -52,11 +52,12 @@
 
 	<build>
 
-
+		<!-- compiled jar name -->
 		<finalName>app</finalName>
 
 		<plugins>
 
+			<!-- init package plugin -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
@@ -81,6 +82,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			<!-- end package plugin -->
 
 
 			<plugin>
