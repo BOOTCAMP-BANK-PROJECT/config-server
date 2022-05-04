@@ -13,8 +13,8 @@ spring:
           username: ${GIT_USERNAME}
           password: ${GIT_PASSWORD}
           default-label: main
-          tryMasterBranch: true
+          tryMasterBranch: false
   security:
     user:
-      name: ${SECURITY_USERNAME}
-      password: ${SECURITY_PASSWORD}
+      name: ${SECURITY_USERNAME:root}
+      password: ${SECURITY_PASSWORD:1234}
